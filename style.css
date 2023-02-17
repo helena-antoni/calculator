@@ -32,35 +32,41 @@ body {
 
 #display {
     margin-top: 54px;
-    padding-inline: 54px;
+    padding-inline: 44px; 
+    height: 80px;  
+    width: 365px; 
 }
 
-#last-calc {
+#last-calc { 
     font-size: 20px;
     text-align: right;
     line-height: 140%;
-    color: #6b6b6b;
+    color: #6b6b6b;   
+    height: 40px;  
+    width: 280px;  
 }
 
 #result {
     display: flex;
     justify-content: space-between;
-    letter-spacing: -0.02em;
+    letter-spacing: -0.02em;   
 }
-
-#result span {
+#result img{ 
+    display: flex;
+    margin-top: 10px;
+}
+#result span{
     font-size: 36px;
     line-height: 140%;
     color: white;
-}
-
+} 
 #keyboard {
     margin-top: 26px;
     margin-inline: 32px;
     padding-bottom: 32px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 12px;
+    gap: 12px; 
 }
 button:hover{ 
     transform: scale(1.05);
@@ -72,7 +78,6 @@ button:hover{
 button:nth-child(1):hover {
   color: white;
 }
- 
 
 button { 
     transition: all 0.3s ease-in-out;

@@ -14,47 +14,51 @@
 <body>
      <div id="calculator">
         <div id="display"> 
-            <div id="last-calc">1 + 1</div>
-            <div id="result">
+            <div id="last-calc">
+                <span id="operator-display"></span>
+            </div>
+            
+            <div id="result" class="hide" id="result-icon">
                 <img src="./assets/equals.svg" alt="sinal de igual">
-                <span>2</span>
+                <span id="result-display" > </span>
             </div>
         </div>
 
         <div id="keyboard">
-            <button class="secundary">CE</button>  
-            <button>C</button>
-            <button>%</button> 
-            <button class="tertiary">
+            <button id="clear" onclick="clearEntry()" class="secundary">CE</button>  
+            <button id="cancel" onclick="allClear()">C</button>
+            <button id="percentage" onclick="insert('%')">%</button> 
+            <button class="tertiary" id="division" onclick="insert('/')">
                 <img src="./assets/divide.svg" alt="">
             </button>
-            <button >7</button>  
-            <button>8</button>
-            <button>9</button> 
-            <button class="tertiary">
+            <button onclick="insert('7')"  >7</button>  
+            <button onclick="insert('8')">8</button>
+            <button onclick="insert('9')"> 9</button> 
+            <button id="multiplication" onclick="insert('*')" class="tertiary">
                 <img src="./assets/multiply.svg" alt="">
             </button>
-            <button>4</button>  
-            <button>5</button>
-            <button>6</button> 
-            <button class="tertiary">
+            <button onclick="insert('4')">4</button>  
+            <button onclick="insert('5')">5</button>
+            <button onclick="insert('6')">6</button> 
+            <button id="less" onclick="insert('-')" class="tertiary">
                 <img src="./assets/less.svg" alt="">
             </button>
-            <button>1</button>  
-            <button>2</button>
-            <button>3</button> 
-            <button class="tertiary">
+            <button onclick="insert('1')">1</button>  
+            <button onclick="insert('2')">2</button>
+            <button onclick="insert('3')">3</button> 
+            <button class="tertiary" id="more" onclick="insert('+')">
                 <img src="./assets/more.svg" alt=""> 
             </button> 
-            <button >
+            <button id="more-less" onclick="positiveNegative()">
                 <img src="./assets/more-less.svg" alt="">
             </button>  
-            <button>0</button>
-            <button>,</button>  
-            <button class="quartiary">
+            <button onclick="insert('0')">0</button>
+            <button  onclick="insert(',')">,</button>  
+            <button class="quartiary"  id="equals" onclick="calculate()">
                 <img src="./assets/key-equals.svg" alt="">
             </button>
         </div>
      </div>
+     <script src="script.js"></script>
 </body>
 </html>
