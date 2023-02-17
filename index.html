@@ -1,64 +1,67 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculadora</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
-</head>
-<body>
-     <div id="calculator">
-        <div id="display"> 
-            <div id="last-calc">
-                <span id="operator-display"></span>
-            </div>
-            
-            <div id="result" class="hide" id="result-icon">
-                <img src="./assets/equals.svg" alt="sinal de igual">
-                <span id="result-display" > </span>
-            </div>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="calculator">
+      <div id="display">
+        <div id="last-calc">
+          <span id="operator-display"></span>
         </div>
 
-        <div id="keyboard">
-            <button id="clear" onclick="clearEntry()" class="secundary">CE</button>  
-            <button id="cancel" onclick="allClear()">C</button>
-            <button id="percentage" onclick="insert('%')">%</button> 
-            <button class="tertiary" id="division" onclick="insert('/')">
-                <img src="./assets/divide.svg" alt="">
-            </button>
-            <button onclick="insert('7')"  >7</button>  
-            <button onclick="insert('8')">8</button>
-            <button onclick="insert('9')"> 9</button> 
-            <button id="multiplication" onclick="insert('*')" class="tertiary">
-                <img src="./assets/multiply.svg" alt="">
-            </button>
-            <button onclick="insert('4')">4</button>  
-            <button onclick="insert('5')">5</button>
-            <button onclick="insert('6')">6</button> 
-            <button id="less" onclick="insert('-')" class="tertiary">
-                <img src="./assets/less.svg" alt="">
-            </button>
-            <button onclick="insert('1')">1</button>  
-            <button onclick="insert('2')">2</button>
-            <button onclick="insert('3')">3</button> 
-            <button class="tertiary" id="more" onclick="insert('+')">
-                <img src="./assets/more.svg" alt=""> 
-            </button> 
-            <button id="more-less" onclick="positiveNegative()">
-                <img src="./assets/more-less.svg" alt="">
-            </button>  
-            <button onclick="insert('0')">0</button>
-            <button  onclick="insert(',')">,</button>  
-            <button class="quartiary"  id="equals" onclick="calculate()">
-                <img src="./assets/key-equals.svg" alt="">
-            </button>
+        <div id="result" class="hide" id="result-icon">
+          <img src="./assets/equals.svg" alt="sinal de igual" />
+          <span id="result-display"> </span>
         </div>
-     </div>
-     <script src="script.js"></script>
-</body>
+      </div>
+
+      <div id="keyboard">
+        <button id="clear" onclick="clearEntry()" class="secundary">CE</button>
+        <button id="cancel" onclick="allClear()">C</button>
+        <button id="percentage" onclick="insert('%')">%</button>
+        <button class="tertiary" id="division" onclick="insert('/')">
+          <img src="./assets/divide.svg" alt="" />
+        </button>
+        <button onclick="insert('7')">7</button>
+        <button onclick="insert('8')">8</button>
+        <button onclick="insert('9')">9</button>
+        <button id="multiplication" onclick="insert('*')" class="tertiary">
+          <img src="./assets/multiply.svg" alt="" />
+        </button>
+        <button onclick="insert('4')">4</button>
+        <button onclick="insert('5')">5</button>
+        <button onclick="insert('6')">6</button>
+        <button id="less" onclick="insert('-')" class="tertiary">
+          <img src="./assets/less.svg" alt="" />
+        </button>
+        <button onclick="insert('1')">1</button>
+        <button onclick="insert('2')">2</button>
+        <button onclick="insert('3')">3</button>
+        <button class="tertiary" id="more" onclick="insert('+')">
+          <img src="./assets/more.svg" alt="" />
+        </button>
+        <button id="more-less" onclick="positiveNegative()">
+          <img src="./assets/more-less.svg" alt="" />
+        </button>
+        <button onclick="insert('0')">0</button>
+        <button onclick="insert(',')">,</button>
+        <button class="quartiary" id="equals" onclick="calculate()">
+          <img src="./assets/key-equals.svg" alt="" />
+        </button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>
